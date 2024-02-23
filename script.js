@@ -1,4 +1,4 @@
-function generate(){
+
 
 const quotes = {
     science: [
@@ -13,6 +13,7 @@ const quotes = {
     ]
    
   };
+  function generate(){
   const author = Object.keys(quotes);
 
   
