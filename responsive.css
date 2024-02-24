@@ -77,4 +77,13 @@
     
     
 }
+#previousButton{
+    width: 40px;
+    padding: 4px;
+
+}
+#nextButton{
+    width: 40px;
+    padding: 4px;
+}
 }
