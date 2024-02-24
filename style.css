@@ -1,137 +1,141 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-body{
-    
+    font-family: Poppins, sans-serif;
+}
+
+body {
+
     background-color: cadetblue;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background: #2b2b2b;
-   
+
     min-height: 100vh;
-    
+
 }
-.container{
-   
-    
-  
+
+.container {
     background-color: darkgray;
     width: 600px;
-border-radius:10px ;
-display: flex;
-flex-direction: column;
-padding: 15px;
-
-   
-    
-    
-}
-p{
-    
-    text-align: center;
-    font-weight: 400;
-    margin-top: 50px;
-}
-#category{ 
-    display: flex;
-    width: 100px;
-    margin-left: 400px;
-    
-    padding: 5px;
-    border-radius: 5px;
-
-}
-
-
-
-
-
-.quotecontainer{
-margin-top: 40px;
-justify-content: flex-end;
-display: flex;
-
-gap: 2px;
-margin-bottom: 20px
-
-
-
-}
-.options{
-    display: flex;
-    height: 60px;
-    justify-content: space-between;
-    background-color:rgb(224, 218, 218);
-}
-.b1{
-    width: 70px;
-    padding: 5px;
-}
-.b2{
-    width: 70px;
-    padding: 5px;
-}
-#button_1{
- 
-    margin-top: 20px;
-    padding: 7px;
-   width:200px;
-   
-    margin: 0 auto;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.options {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    /* justify-content: space-between; */
+   
+}
+.toggleWrapper{
+    width: 50%;
     
     
+}
+
+.randomButton {
+    min-width: fit-content;
 
 }
-p{
+#category{
+    width: 80px;
+   
+
+}
+
+.subContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: end;
+    width: 50%;
+}
+
+.quoteContainer {
     padding-top: 30px;
-    background-color: rgb(224, 218, 218);
+    display: flex;
+    align-items: center;
+    
     height: 100px;
     border-radius: 5px;
-   
+    padding: 10px;
 }
-#quote{
+
+#quote {
     font-size: 20px;
 }
+
+.font-2xl {
+    font-size: 40px;
+}
+
+.quoteButtoncontainer {
+    justify-content: space-around;
+    display: flex;
+    gap: 2px;
+    margin-top: 20px;
+}
+
+b1 {
+    width: 70px;
+    padding: 5px;
+}
+
+.b2 {
+    width: 70px;
+    padding: 5px;
+}
+
+#button_1 {
+
+    margin-top: 20px;
+    padding: 7px;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#category {
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    
+
+}
+
+#quote {
+    font-size: 20px;
+    text-align: center;
+}
+
 .dark-mode {
     background-color: #333;
     color: #fff;
-  }
-#toggle{
-    display: block;
-    display: flex;
-    justify-content:start ;
-    border-radius: 40px;
-    width: 60px;
-    margin-top: 15px;
-    height: 30px;
-    background: #222;
-    padding-top: 2px;
-   
-       
-   
-   
-} 
-#toggle .indicator{
+}
 
-    width: 30px;
-   background: linear-gradient(to bottom, #444, #222);
-    height: 25px;
-    padding: 2px
-;
-border-radius: 50%;
-margin-left: 5px;
-transform:scale(0.9);
+
+
+
+body.active {
+    background: #f8f8f8;
 }
-body.active{
-    background:#f8f8f8 ;
-}
-#toggle.active .indicator{
-    left: 10px;
+
+.commonButtonStyle {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px;
 }

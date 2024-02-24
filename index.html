@@ -1,45 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css" />
 </head>
+<style>
+  .toggle-container {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #ccc;
+    overflow: hidden;
+  }
+
+  .toggle-checkbox {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+
+  .toggle-checkbox.active+.toggle-slider {
+    transform: translateX(100%);
+  }
+</style>
+
 <body>
-  
-    <div class="container"> 
-      
-          <div class="options">
+
+  <div class="container">
+
+    <div onclick="helloWorld()" class="options">
+      <!-- <div class="toggleWrapper">
+
+              <input type="checkbox" class="toggle-checkbox">
             <div id="toggle">
                 <i class="indicator"></i>
             </div>
+            </div> -->
+            <div class="toggleWrapper">
+      <label class="toggle-container">
+        <div id="toggle" class="toggle-checkbox"></div>
+
+        <span class="toggle-slider"></span>
+      </label></div>
+
+
+
+      <div class="subContainer">
+        <button class="commonButtonStyle" class="randomButton" onclick="randomQuote()">Random Quote</button>
+        <select onchange="updateCategory()" id="category">
+          <option value="Science">Science</option>
+          <option value="Inspiration">Inspiration</option>
+        </select>
         
-            <div>
-                <select onchange="updateCategory()" id="category">
-                    <option value="Science">Science</option>
-                    <option value="Inspiration">Inspiration</option>
-                </select>
-                <button onclick="randomQuote()">Random Quote</button>
-            </div>
-        </div>
+      </div>
+    </div>
 
 
 
+    <div class="quoteContainer">
+      <p class="" id="quote"></p>
+      <!-- <div class="fontButton">
+      <button>+</button>
+      <button>-</button></div> -->
 
-        <p id="quote"></p>
-        <div class="quotecontainer">
-          
-          
-          <button  onclick="nextQuote()" id="b1" >next</button>
-          <button onclick="previousQuote()" class="b2">previous</button>
-          
-        </div>
-        <button onclick="generateQuote()" id="button_1">Generate Quote</button>
-        </div>
+    </div>
 
-      
+    <div class="quoteButtoncontainer">
+
+
+      <button class="commonButtonStyle" onclick="nextQuote()" id="b1">next</button>
+      <button class="commonButtonStyle" onclick="generateQuote()" id="button_1">Generate Quote</button>
+      <button class="commonButtonStyle" onclick="previousQuote()" class="b2">previous</button>
+
+
     
-    <script src="script.js"></script>
+    
+  </div>
+
+  </div>
+
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>
