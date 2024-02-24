@@ -9,25 +9,40 @@
 <body>
   
     <div class="container"> 
-        <select id="category">
-            <label>Category:</label>
-            <option value="Category">Category</option>
-            <option value="science">Science</option>
-            <option value="others">others</option>
+      <div class="options">
+        
+          <div>
+          <label for="mode-switch">Dark Mode:</label>
+          <input type="checkbox" id="mode-switch">
+          </div>
+          <div>
+           
+        <select onchange="updateCategory()" id="category">
+            <!-- <label>Category:</label> -->
+            
+            <option value="Science">science</option>
+            <option  value="Inspiration">Inspiration</option>
           </select>
-        <h1>"Practice makes man perfect"</h1>
+          
+        
+          <button onclick="randomQuote()">Random Quote</button>
+
+          </div>
+
+          </div>
+        <p id="quote"></p>
         <div class="quotecontainer">
           
           
-          <button class="b1" >next</button>
-          <button class="b2">previous</button>
+          <button  onclick="nextQuote()" id="b1" >next</button>
+          <button onclick="previousQuote()" class="b2">previous</button>
           
         </div>
-        <button onclick="generate()" id="button_1">Generate Quote</button>
+        <button onclick="generateQuote()" id="button_1">Generate Quote</button>
         </div>
 
       
     
-    
+    <script src="script.js"></script>
 </body>
 </html>
