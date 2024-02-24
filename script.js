@@ -46,9 +46,12 @@ const quotes = {
 // }
  const body=document.querySelector("body");
  const toggle=document.getElementById("toggle");
+
  toggle.onclick = function(){
   toggle.classList.toggle("active");
   body.classList.toggle("active");
+  container.classList.toggle("active");
+  
   console.log("hi")
  }
  function helloWorld(){
@@ -61,4 +64,13 @@ const quotes = {
   
   
  }
+ function increaseFontSize(){
+  document.getElementById("quote").style.fontSize = "25px";
+  console.log("hey")
+ }
+ function decreaseFontSize(){
+  document.getElementById("quote").style.fontSize = "15px"
+ }
+
+ const container=document.getElementById("container");
 
