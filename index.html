@@ -9,27 +9,24 @@
 <body>
   
     <div class="container"> 
-      <div class="options">
+      
+          <div class="options">
+            <div id="toggle">
+                <i class="indicator"></i>
+            </div>
         
-          <div>
-          <label for="mode-switch">Dark Mode:</label>
-          <input type="checkbox" id="mode-switch">
-          </div>
-          <div>
-           
-        <select onchange="updateCategory()" id="category">
-            <!-- <label>Category:</label> -->
-            
-            <option value="Science">science</option>
-            <option  value="Inspiration">Inspiration</option>
-          </select>
-          
-        
-          <button onclick="randomQuote()">Random Quote</button>
+            <div>
+                <select onchange="updateCategory()" id="category">
+                    <option value="Science">Science</option>
+                    <option value="Inspiration">Inspiration</option>
+                </select>
+                <button onclick="randomQuote()">Random Quote</button>
+            </div>
+        </div>
 
-          </div>
 
-          </div>
+
+
         <p id="quote"></p>
         <div class="quotecontainer">
           

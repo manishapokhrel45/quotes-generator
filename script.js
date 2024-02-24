@@ -15,6 +15,7 @@ const quotes = {
   };
   let category="Science";
   let index=0;
+ 
   function generateQuote(){
     document.querySelector("#quote").innerHTML= quotes[category][index]
   }
@@ -38,6 +39,14 @@ const quotes = {
     generateQuote();
 
   }
-  
- 
-  
+//   var btn = document.getElementById("toggle");
+
+// function togglebtn() {
+//   btn.classList.toggle(".active");
+// }
+ const body=document.querySelector("body");
+ const toggle=document.getElementById("toggle");
+ toggle.onclick = function(){
+  toggle.classList.toggle("active");
+  body.classList.toggle("active");
+ }
