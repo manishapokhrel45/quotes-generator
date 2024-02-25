@@ -12,14 +12,16 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    /* background: #fff; */
+    background-color: #f4eacd;
 
     min-height: 100vh;
 
 }
 
 .container {
-    background-color: rgba(224, 166, 79, 0.79);
+    background-color: #dfb665;
+    /* background-color: rgba(224, 166, 79, 0.79); */
     width: 600px;
     border-radius: 10px;
     display: flex;
@@ -48,6 +50,7 @@ body {
 
 .randomButton {
     min-width: fit-content;
+    background-color: #f4eacd;
    
 }
 #category{
@@ -110,6 +113,8 @@ body {
 #previousButton {
     width: 100px;
     padding: 5px;
+    background-color: #f4eacd;
+    color:#381a10 ;
    
     
     
@@ -118,6 +123,9 @@ body {
 #nextButton {
     width: 70px;
     padding: 5px;
+    background-color: #f4eacd;
+    color:#381a10 ;
+    
     
 }
 
@@ -128,7 +136,8 @@ body {
     width: 200px;
     margin: 0 auto;
     border-radius: 10px;
-    background-color:   #f8a202;
+    /* background-color:   #f8a202; */
+    background-color: #c5842d;
 }
 
 #category {
@@ -143,6 +152,7 @@ body {
 #quote {
     font-size: 20px;
     text-align: center;
+    color: #faf6ec;
 }
 
 .dark-mode {
