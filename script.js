@@ -42,10 +42,14 @@ const quotes = {
     index = (index + 1) % quotes[category].length;
     generateQuote()
   }
-  function previousQuote(){
-    index = (index - 1) % quotes[category].length;
-    generateQuote()
-  }
+  function previousQuote() {
+    index = (index - 1 + quotes[category].length) % quotes[category].length;
+    generateQuote();
+}
+  // function previousQuote(){
+  //   index = (index - 1) % quotes[category].length;
+  //   generateQuote()
+  // }
   function randomQuote(){
 
   
@@ -66,10 +70,20 @@ const quotes = {
 // }
  const body=document.querySelector("body");
  const toggle=document.getElementById("toggle");
+ const slider=document.getElementById("toggle-slider")
 
  toggle.onclick = function(){
   toggle.classList.toggle("active");
   body.classList.toggle("active");
+  
+  container.classList.toggle("active");
+  
+  console.log("hi")
+ }
+ slider.onclick = function(){
+  toggle.classList.toggle("active");
+  body.classList.toggle("active");
+  
   container.classList.toggle("active");
   
   console.log("hi")
@@ -84,12 +98,18 @@ const quotes = {
   
   
  }
- function increaseFontSize(){
-  document.getElementById("quote").style.fontSize = "25px";
+ function setFont10px(){
+  document.getElementById("quote").style.fontSize = "10px";
   console.log("hey")
  }
- function decreaseFontSize(){
-  document.getElementById("quote").style.fontSize = "15px"
+ function setFont20px(){
+  document.getElementById("quote").style.fontSize = "20px"
+ }
+ function setFont30px(){
+  document.getElementById("quote").style.fontSize = "30px"
+ }
+ function setFont40px(){
+  document.getElementById("quote").style.fontSize = "40px"
  }
 
  const container=document.getElementById("container");

@@ -44,9 +44,9 @@
 
 <body>
 
-  <div id="container" class="container " >
+  <div id="container" class="container ">
 
-    <div onclick="helloWorld()" class="options">
+    <div class="options">
       <!-- <div class="toggleWrapper">
 
               <input type="checkbox" class="toggle-checkbox">
@@ -54,12 +54,13 @@
                 <i class="indicator"></i>
             </div>
             </div> -->
-            <div class="toggleWrapper">
-      <label class="toggle-container">
-        <div id="toggle" class="toggle-checkbox"></div>
+      <div class="toggleWrapper">
+        <label  class="toggle-container">
+          <div  id="toggle" class="toggle-checkbox"></div>
 
-        <span class="toggle-slider"></span>
-      </label></div>
+          <span id="toggle-slider"  class="toggle-slider"></span>
+        </label>
+      </div>
 
 
 
@@ -72,34 +73,48 @@
           <option value="Nature">Nature</option>
           <option value="Wisdom">Wisdom</option>
         </select>
-        
+
       </div>
     </div>
 
 
 
     <div class="quoteContainer">
-      <p class=""><q  id="quote">Quotes</q></p>
-      <div class="fontButton">
+      <p class=""><q id="quote">Quotes</q></p>
+      <!-- <div class="fontButton">
       <button onclick="increaseFontSize()" class="searchButton">10px</button>
-      <button onclick="decreaseFontSize()" class="searchButton">20px</button></div>
-      
+      <button onclick="decreaseFontSize()" class="searchButton">20px</button>
+      </div> -->
     </div>
+
+
 
     <div class="quoteButtoncontainer">
 
       <button class="commonButtonStyle" onclick="previousQuote()" id="previousButton">Previous</button>
-      
+
       <button class="commonButtonStyle" onclick="generateQuote()" id="button_1">Generate Quote</button>
-      
+
       <button class="commonButtonStyle" onclick="nextQuote()" id="nextButton">Next</button>
+    </div>
+
+    <div class="fontSizeButton">
+      <div>set font size</div>
+      <div>
+        <button id="font-button1" onclick="setFont10px()" class="searchButton">10px</button>
+        <button id="font-button2" onclick="setFont20px()" class="searchButton">20px</button>
+        <button id="font-button3" onclick="setFont30px()" class="searchButton">30px</button>
+        <button id="font-button4" onclick="setFont40px()" class="searchButton">40px</button>
+      </div>
 
 
-    
-    
+    </div>
+
+
+
   </div>
 
-  </div>
+
 
 
 

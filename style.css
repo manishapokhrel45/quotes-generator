@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     /* background: #fff; */
-    background-color: #f4eacd;
+    background-color: #ebd39d;
 
     min-height: 100vh;
 
@@ -26,10 +26,9 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 30px;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    gap: 25px;
 }
 
 .options {
@@ -40,22 +39,24 @@ body {
     height: 50px;
     align-items: center;
     /* justify-content: space-between; */
-   
+
 }
-.toggleWrapper{
+
+.toggleWrapper {
     width: 50%;
-    
-    
+
+
 }
 
 .randomButton {
     min-width: fit-content;
     background-color: #f4eacd;
-   
+
 }
-#category{
+
+#category {
     width: 80px;
-   
+
 
 }
 
@@ -67,38 +68,28 @@ body {
     width: 50%;
 }
 
+
 .quoteContainer {
     padding-top: 30px;
     display: flex;
     align-items: center;
-    
-    height: 100px;
+
+    height: 120px;
     border-radius: 10px;
     padding: 10px;
-    position: relative;
-    
+    /* position: relative; */
+
+    margin-top: 10px;
+
 }
 
 #quote {
     font-size: 30px;
-    color:azure;
+    color: azure;
     font-weight: 500;
     word-spacing: 1px;
     font: bold;
-    
-}
 
-.font-2xl {
-    font-size: 40px;
-}
-.fontButton{
-    position: absolute;
-    right: 20px;
-    bottom: 5px;
-
-}
-.searchButton{
-    padding: 5px;
 }
 
 
@@ -108,25 +99,30 @@ body {
     display: flex;
     gap: 2px;
     margin-top: 20px;
+    /* position: relative; */
+    margin-bottom: 15px;
+
+
 }
+
 
 #previousButton {
     width: 100px;
     padding: 5px;
     background-color: #f4eacd;
-    color:#381a10 ;
-   
-    
-    
+    color: #381a10;
+
+
+
 }
 
 #nextButton {
     width: 70px;
     padding: 5px;
     background-color: #f4eacd;
-    color:#381a10 ;
-    
-    
+    color: #381a10;
+
+
 }
 
 #button_1 {
@@ -145,7 +141,7 @@ body {
     padding: 10px;
     border-radius: 5px;
     width: fit-content;
-    
+
 
 }
 
@@ -166,13 +162,31 @@ body {
 body.active {
     background: #2b2b2b;
 }
-#container.active{
-  background-color: #968b7043;
+
+#container.active {
+    background-color: #968b7043;
 }
 
 .commonButtonStyle {
     border-radius: 8px;
     padding: 10px;
     border: 1px;
-    
+
+}
+
+#font-button1 {
+    font-size: 5px;
+}
+
+#font-button2 {
+    font-size: 10px;
+
+}
+
+#font-button3 {
+    font-size: 15px;
+}
+
+#font-button4 {
+    font-size: 20px;
 }
