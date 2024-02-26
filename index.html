@@ -9,38 +9,7 @@
   <link rel="stylesheet" href="responsive.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<style>
-  .toggle-container {
-    display: inline-block;
-    position: relative;
-    width: 60px;
-    height: 30px;
-    border-radius: 15px;
-    background-color: #2b2b2b;
-    overflow: hidden;
-  }
 
-  .toggle-checkbox {
-    display: block;
-    height: 100%;
-    width: 100%;
-  }
-
-  .toggle-slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #fff;
-    transition: transform 0.3s ease;
-  }
-
-  .toggle-checkbox.active+.toggle-slider {
-    transform: translateX(100%);
-  }
-</style>
 
 <body>
 
@@ -80,7 +49,7 @@
 
 
     <div class="quoteContainer">
-      <p class=""><q id="quote">Quotes</q></p>
+      <p class=""><q id="quote">Explore categories,Your quotes will appear here</q></p>
       <!-- <div class="fontButton">
       <button onclick="increaseFontSize()" class="searchButton">10px</button>
       <button onclick="decreaseFontSize()" class="searchButton">20px</button>
@@ -99,12 +68,12 @@
     </div>
 
     <div class="fontSizeButton">
-      <div>set font size</div>
+      <div>Set font size</div>
       <div>
-        <button id="font-button1" onclick="setFont10px()" class="searchButton">10px</button>
-        <button id="font-button2" onclick="setFont20px()" class="searchButton">20px</button>
-        <button id="font-button3" onclick="setFont30px()" class="searchButton">30px</button>
-        <button id="font-button4" onclick="setFont40px()" class="searchButton">40px</button>
+        <button id="bb1"  onclick="setFont10px()" class="searchButton">sm</button>
+        <button  onclick="setFont20px()" class="searchButton">md</button>
+        <button  onclick="setFont30px()" class="searchButton">lg</button>
+        
       </div>
 
 

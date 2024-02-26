@@ -2,33 +2,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
 }
 
 body {
 
-    background-color: cadetblue;
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* background: #fff; */
+   
+    
     background-color: #ebd39d;
-
+   
+    
+   
     min-height: 100vh;
 
 }
 
 .container {
     background-color: #dfb665;
-    /* background-color: rgba(224, 166, 79, 0.79); */
+   
+    
     width: 600px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 20px;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 20px;
 }
 
 .options {
@@ -44,9 +48,39 @@ body {
 
 .toggleWrapper {
     width: 50%;
-
-
 }
+
+    .toggle-container {
+        display: inline-block;
+        position: relative;
+        width: 60px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: #2b2b2b;
+        overflow: hidden;
+      }
+    
+      .toggle-checkbox {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+    
+      .toggle-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: transform 0.3s ease;
+      }
+    
+      .toggle-checkbox.active+.toggle-slider {
+        transform: translateX(100%);
+      }
+
 
 .randomButton {
     min-width: fit-content;
@@ -77,18 +111,24 @@ body {
     height: 120px;
     border-radius: 10px;
     padding: 10px;
-    /* position: relative; */
+   
 
-    margin-top: 10px;
+    margin-top: 20px;
 
 }
 
 #quote {
-    font-size: 30px;
-    color: azure;
+    font-size: 25px;
+    /* color: azure; */
     font-weight: 500;
     word-spacing: 1px;
     font: bold;
+    font-family: "Poppins" ,sans-serif;
+    text-align: center;
+   
+    color: #f4eacd;
+ 
+    
 
 }
 
@@ -109,7 +149,7 @@ body {
 #previousButton {
     width: 100px;
     padding: 5px;
-    background-color: #f4eacd;
+    /* background-color: #f4eacd; */
     color: #381a10;
 
 
@@ -119,7 +159,7 @@ body {
 #nextButton {
     width: 70px;
     padding: 5px;
-    background-color: #f4eacd;
+    /* background-color: #c5842d; */
     color: #381a10;
 
 
@@ -132,8 +172,10 @@ body {
     width: 200px;
     margin: 0 auto;
     border-radius: 10px;
-    /* background-color:   #f8a202; */
+   
     background-color: #c5842d;
+    
+   
 }
 
 #category {
@@ -141,19 +183,20 @@ body {
     padding: 10px;
     border-radius: 5px;
     width: fit-content;
+    color: #381a10;
+    background-color: #c5842d;
+
 
 
 }
 
-#quote {
-    font-size: 20px;
-    text-align: center;
-    color: #faf6ec;
-}
 
 .dark-mode {
     background-color: #333;
     color: #fff;
+}
+p{
+    font-family: Serif Fonts!important;
 }
 
 
@@ -171,22 +214,19 @@ body.active {
     border-radius: 8px;
     padding: 10px;
     border: 1px;
+    background-color: #c5842d;
+    color: #381a10;
+
 
 }
-
-#font-button1 {
-    font-size: 5px;
+.searchButton{
+    padding: 10px;
+    width: 40px;
+    background-color: #d49a3b;
+    border: 1px;
+    border-radius: 5px;
+    
 }
-
-#font-button2 {
-    font-size: 10px;
-
-}
-
-#font-button3 {
-    font-size: 15px;
-}
-
-#font-button4 {
-    font-size: 20px;
+#fontSizeButton{
+    
 }

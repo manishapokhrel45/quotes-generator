@@ -71,12 +71,15 @@ const quotes = {
  const body=document.querySelector("body");
  const toggle=document.getElementById("toggle");
  const slider=document.getElementById("toggle-slider")
+ const container=document.getElementById("container");
+
 
  toggle.onclick = function(){
   toggle.classList.toggle("active");
   body.classList.toggle("active");
   
   container.classList.toggle("active");
+
   
   console.log("hi")
  }
@@ -92,14 +95,14 @@ const quotes = {
   console.log("helloworld")
  }
 
- const quoteText=document.getElementById("quote");
- quoteText.onclick = function(){
-  quoteText.classList.toggle("font-2xl");
+//  const quoteText=document.getElementById("quote");
+//  quoteText.onclick = function(){
+//   quoteText.classList.toggle("font-2xl");
   
   
- }
+ 
  function setFont10px(){
-  document.getElementById("quote").style.fontSize = "10px";
+  document.getElementById("quote").style.fontSize = "16px";
   console.log("hey")
  }
  function setFont20px(){
@@ -108,9 +111,6 @@ const quotes = {
  function setFont30px(){
   document.getElementById("quote").style.fontSize = "30px"
  }
- function setFont40px(){
-  document.getElementById("quote").style.fontSize = "40px"
- }
-
- const container=document.getElementById("container");
+ 
+//  const container=document.getElementById("container");
 
