@@ -32,32 +32,32 @@ const quotes = {
     ]
    
   };
-  let category="Science";
+  let currCategory="Science";
   let index=0;
  
   function generateQuote(){
-    document.querySelector("#quote").innerHTML= quotes[category][index]
+    document.querySelector("#quote").innerHTML= quotes[currCategory][index]
   }
   function nextQuote(){
-    index = (index + 1) % quotes[category].length;
+    index = (index + 1) % quotes[currCategory].length;
     generateQuote()
   }
   function previousQuote() {
-    index = (index - 1 + quotes[category].length) % quotes[category].length;
+    index = (index - 1 + quotes[currCategory].length) % quotes[currCategory].length;
     generateQuote();
 }
   // function previousQuote(){
-  //   index = (index - 1) % quotes[category].length;
+  //   index = (index - 1) % quotes[currCategory].length;
   //   generateQuote()
   // }
   function randomQuote(){
 
   
-  index = Math.floor(Math.random() * quotes[category].length);
+  index = Math.floor(Math.random() * quotes[currCategory].length);
   generateQuote();
   }
   function updateCategory(){
-    category = document.getElementById('category').value;
+    currCategory = document.getElementById('category').value;
     // category = "Inspiration";
     index = 0;
     generateQuote();
